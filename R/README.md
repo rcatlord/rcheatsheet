@@ -27,3 +27,6 @@ qqline(df$col1)
 # If p> 0.05, normality can be assumed
 shapiro.test(df$col1)
 ```
+
+## Standardise values
+`df %>% mutate(col1 = scale(col1))`

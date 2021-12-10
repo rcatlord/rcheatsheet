@@ -28,5 +28,5 @@ qqline(df$col1)
 shapiro.test(df$col1)
 ```
 
-## Standardise values
+### Standardise values
 `df %>% mutate(col1 = scale(col1))`

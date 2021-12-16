@@ -5,6 +5,9 @@
 #### count number of missing values in each column
 `df %>% map_dbl(~sum(is.na(.)))`
 
+#### count unique values in every column
+`df %>% map_int(n_distinct)`
+
 #### show unique values in categorical variables
 `map(select_if(df, is.character), unique)`
 

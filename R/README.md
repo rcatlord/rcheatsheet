@@ -15,6 +15,9 @@
 `df %>% mutate(col1 = na_if(col1, "Unknown"))`      
 `df %>% mutate_at(vars(col1, col2), na_if, "Unknown")`
 
+### convert string to NA across all columns
+`mutate(across(everything(), na_if, ".."))`
+
 ### Test for normality
 ```
 # Histogram with a density curve

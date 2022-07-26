@@ -18,6 +18,10 @@
 ### convert string to NA across all columns
 `mutate(across(everything(), na_if, ".."))`
 
+### mutate and move new column
+`penguins %>% 
+  mutate(id = row_number(), .before = contains("_"))`
+
 ### Test for normality
 ```
 # Histogram with a density curve

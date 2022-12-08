@@ -1,5 +1,21 @@
 # R cheatsheet
 
+### Tidying data
+
+#### pivot_wider
+`pivot_wider(names_from = year, values_from = percent) `
+
+#### pivot_longer
+`pivot_longer(-name, names_to = "year", values_to = "n") `
+
+### Reading Excel spreadsheets via a URL
+```
+library(httr) ; library(readxl)
+tmp <- tempfile(fileext = ".xlsx")
+GET(url = "https://.xlsx", write_disk(tmp))
+df <- read_xlsx(tmp, sheet = "Sheet 1") 
+```
+
 ### Missing values
 
 #### count number of missing values in each column

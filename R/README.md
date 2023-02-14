@@ -52,6 +52,6 @@ theme(plot.margin = unit(rep(0.5, 4), "cm"),
       panel.grid.major.x = element_blank(),
       axis.line.x = element_line(),
       plot.title = element_text(size = 18, face = "bold"),
-      plot.subtitle = element_text(size = 14),
+      plot.subtitle = element_text(size = 14, margin = margin(b = 20)),
       plot.caption = element_text(hjust = 0, margin = margin(t = 20)))
 ```

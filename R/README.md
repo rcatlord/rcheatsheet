@@ -48,9 +48,10 @@ df <- read_xlsx(tmp, sheet = "Sheet 1")
 ### Visualising data
 #### Tweaks to ggplot2 theme
 ```
-theme_minimal() +
 theme(plot.margin = unit(rep(0.5, 4), "cm"),
       panel.grid.major.x = element_blank(),
+      axis.line.x = element_line(),
       plot.title = element_text(size = 18, face = "bold"),
+      plot.subtitle = element_text(size = 14),
       plot.caption = element_text(hjust = 0, margin = margin(t = 20)))
 ```

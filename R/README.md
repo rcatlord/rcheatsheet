@@ -44,3 +44,13 @@ df <- read_xlsx(tmp, sheet = "Sheet 1")
 
 ### Standardise values
 `df %>% mutate(col1 = scale(col1))`
+
+### Visualising data
+#### Tweaks to ggplot2 theme
+```
+theme_minimal() +
+theme(plot.margin = unit(rep(0.5, 4), "cm"),
+      panel.grid.major.x = element_blank(),
+      plot.title = element_text(size = 18, face = "bold"),
+      plot.caption = element_text(hjust = 0, margin = margin(t = 20)))
+```

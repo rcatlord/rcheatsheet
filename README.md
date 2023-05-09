@@ -50,6 +50,7 @@ df <- read_xlsx(tmp, sheet = "Sheet 1")
 ```
 theme(plot.margin = unit(rep(0.5, 4), "cm"),
       panel.grid.major.x = element_blank(),
+      panel.grid.minor = element_blank(),
       axis.line.x = element_line(),
       plot.title = element_text(size = 18, face = "bold"),
       plot.subtitle = element_text(size = 14, margin = margin(b = 20)),

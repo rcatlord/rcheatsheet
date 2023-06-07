@@ -56,3 +56,6 @@ theme(plot.margin = unit(rep(0.5, 4), "cm"),
       plot.subtitle = element_text(size = 14, margin = margin(b = 20)),
       plot.caption = element_text(hjust = 0, margin = margin(t = 20)))
 ```
+
+#### Round percentages
+`scales::label_percent(accuracy = 1L)`

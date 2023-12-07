@@ -59,3 +59,16 @@ theme(plot.margin = unit(rep(0.5, 4), "cm"),
 
 #### Round percentages
 `scales::label_percent(accuracy = 1L)`
+
+### Dates
+
+|Symbol |Description |Example | 
+|:--- |:--- |:---|
+|%d	|day as a number (0-31)	|15|
+|%a	|abbreviated weekday	|Tue|
+|%A	|unabbreviated weekday	|Tuesday|
+|%m	|month (00-12)	|07|
+|%b	|abbreviated month	|Jul|
+|%B	|unabbreviated month	|July|
+|%y	|2-digit year	|23|
+|%Y	|4-digit year	|2023|
